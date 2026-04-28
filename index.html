@@ -176,18 +176,241 @@ body { background:var(--bg); color:var(--text); font-family:'Apple SD Gothic Neo
 <div class="hero">
   <div class="hero-left">
     <div class="eyebrow">Jewelice · 쥬얼아이스 × Tiffany Blue</div>
-    <h1><strong>쇼핑백 + 더스트백 사이즈 시뮬레이션</strong> v6.0</h1>
-    <div class="hero-meta">기존 박스 활용 · 쇼핑백 1종 · 더스트백 1종 · 티파니 블루 + 화이트 로고 · 2026.04.28</div>
+    <h1><strong>쇼핑백 + 더스트백 사이즈 시뮬레이션</strong> v6.1</h1>
+    <div class="hero-meta">기존 박스 활용 · 쇼핑백 1종 · 더스트백 1종 · 3D 실사 렌더 · 티파니 블루 + 화이트 로고 · 2026.04.28</div>
   </div>
   <div class="hero-right">
     <div class="note">
       확정 쇼핑백 <span>340 × 140 × 370mm</span> <span class="tiffany">· Tiffany Blue</span><br>
-      확정 더스트백 <span>W190 × H260mm</span> (전 제품 공용)<br>
+      확정 더스트백 <span>W250 × H320mm</span> (340 쇼핑백 비율 재산정)<br>
       듀오메이커 박스 <span class="confirmed">170×110×180mm 다나와 확정</span><br>
       하이볼 글라스 박스 <span class="confirmed">80×80×190mm 실측</span><br>
       개별 몰드 <span class="confirmed">박스 없음 · 본품 출고</span><br>
       몰드 치수 <span class="est">추정치 포함</span>
     </div>
+  </div>
+</div>
+
+<!-- SECTION 0: 3D 실사 렌더 -->
+<div class="section" style="background:linear-gradient(180deg, rgba(10,186,181,0.04), transparent);">
+  <div class="section-title">00 · 3D 실사 렌더 — 쇼핑백 340×140×370 + 더스트백 W250×H320</div>
+  <div style="display:grid; grid-template-columns:1fr 1fr; gap:32px; align-items:center; max-width:1100px; margin:0 auto;">
+
+    <!-- 쇼핑백 3D 실사 -->
+    <div style="text-align:center;">
+      <div style="background:linear-gradient(180deg, #f5f5f3 0%, #e0e0dc 70%, #c8c8c4 100%); border-radius:14px; padding:36px 24px 24px; box-shadow:inset 0 -40px 60px rgba(0,0,0,0.08);">
+        <svg viewBox="0 0 400 480" width="100%" style="max-width:380px;">
+          <defs>
+            <!-- 쇼핑백 정면 그라디언트 (Tiffany Blue 입체감) -->
+            <linearGradient id="bagFront" x1="0%" y1="0%" x2="0%" y2="100%">
+              <stop offset="0%" stop-color="#7DDDD6"/>
+              <stop offset="35%" stop-color="#1FC3BD"/>
+              <stop offset="100%" stop-color="#007E7A"/>
+            </linearGradient>
+            <linearGradient id="bagSide" x1="0%" y1="0%" x2="100%" y2="0%">
+              <stop offset="0%" stop-color="#005A56"/>
+              <stop offset="60%" stop-color="#0ABAB5"/>
+              <stop offset="100%" stop-color="#3DC9C3"/>
+            </linearGradient>
+            <linearGradient id="bagTop" x1="0%" y1="0%" x2="0%" y2="100%">
+              <stop offset="0%" stop-color="#9EE5DF"/>
+              <stop offset="100%" stop-color="#0ABAB5"/>
+            </linearGradient>
+            <linearGradient id="handleGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+              <stop offset="0%" stop-color="#ffffff"/>
+              <stop offset="50%" stop-color="#f0f0f0"/>
+              <stop offset="100%" stop-color="#dadada"/>
+            </linearGradient>
+            <radialGradient id="bagGloss" cx="35%" cy="30%" r="50%">
+              <stop offset="0%" stop-color="#ffffff" stop-opacity="0.35"/>
+              <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+            </radialGradient>
+            <filter id="softShadow"><feGaussianBlur stdDeviation="4"/></filter>
+          </defs>
+
+          <!-- 바닥 그림자 -->
+          <ellipse cx="210" cy="455" rx="170" ry="14" fill="rgba(0,0,0,0.28)" filter="url(#softShadow)"/>
+
+          <!-- 옆면 (오른쪽, 원근) -->
+          <polygon points="305,90 350,108 350,448 305,460" fill="url(#bagSide)" stroke="#005A56" stroke-width="0.5"/>
+
+          <!-- 정면 -->
+          <polygon points="50,90 305,90 305,460 50,460" fill="url(#bagFront)" stroke="#005A56" stroke-width="0.5"/>
+
+          <!-- 정면 광택 -->
+          <polygon points="50,90 305,90 305,460 50,460" fill="url(#bagGloss)"/>
+
+          <!-- 상단 접힘 -->
+          <polygon points="50,90 305,90 350,108 95,108" fill="url(#bagTop)" stroke="#005A56" stroke-width="0.5"/>
+
+          <!-- 옆면 접힘선 -->
+          <line x1="305" y1="90" x2="305" y2="460" stroke="#005A56" stroke-width="0.6" opacity="0.35"/>
+
+          <!-- 정면 미세 종이결 -->
+          <line x1="80" y1="105" x2="80" y2="455" stroke="#fff" stroke-width="0.4" opacity="0.18"/>
+          <line x1="280" y1="105" x2="280" y2="455" stroke="#000" stroke-width="0.4" opacity="0.10"/>
+
+          <!-- 화이트 JEWELICE 메인 로고 -->
+          <text x="177" y="265" font-size="36" fill="#ffffff" font-family="'Helvetica Neue','Avenir Next','Apple SD Gothic Neo',sans-serif" font-weight="200" letter-spacing="9" text-anchor="middle">JEWELICE</text>
+          <line x1="100" y1="278" x2="254" y2="278" stroke="#ffffff" stroke-width="0.6" opacity="0.7"/>
+          <text x="177" y="296" font-size="9" fill="#ffffff" font-family="sans-serif" font-weight="500" letter-spacing="6" text-anchor="middle" opacity="0.92">PREMIUM ICE EXPERIENCE</text>
+
+          <!-- 화이트 손잡이 (코튼 트위스트 스타일) -->
+          <path d="M120 90 Q120 35 177 30 Q235 35 235 90"
+                fill="none" stroke="url(#handleGrad)" stroke-width="6" stroke-linecap="round"/>
+          <path d="M120 90 Q120 38 177 33 Q235 38 235 90"
+                fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" opacity="0.9"/>
+          <!-- 손잡이 그림자 -->
+          <ellipse cx="120" cy="92" rx="3" ry="2" fill="#005A56" opacity="0.5"/>
+          <ellipse cx="235" cy="92" rx="3" ry="2" fill="#005A56" opacity="0.5"/>
+
+          <!-- 옆면 작은 로고 -->
+          <text x="327" y="280" font-size="6" fill="#ffffff" font-family="sans-serif" font-weight="600" letter-spacing="2" text-anchor="middle" opacity="0.7" transform="rotate(-90,327,280)">JEWELICE</text>
+
+          <!-- 치수 라벨 -->
+          <text x="177" y="478" font-size="11" fill="#666" text-anchor="middle" font-family="sans-serif" letter-spacing="2">340 × 140 × 370 mm</text>
+        </svg>
+        <div style="margin-top:12px; font-size:11px; color:#666; letter-spacing:2px; text-transform:uppercase;">SHOPPING BAG · TIFFANY BLUE</div>
+      </div>
+      <div style="margin-top:14px; padding:12px; background:rgba(10,186,181,0.08); border-radius:8px; border:1px solid rgba(10,186,181,0.25);">
+        <div style="font-size:11px; color:var(--tiffany-light); font-weight:700; letter-spacing:1px;">SHOPPING BAG · 340×140×370mm</div>
+        <div style="font-size:10px; color:var(--muted); margin-top:4px; line-height:1.7;">Tiffany Blue (Pantone 1837 / #0ABAB5) · 화이트 손잡이 · 화이트 JEWELICE 로고 · 기존 박스 사이즈 그대로</div>
+      </div>
+    </div>
+
+    <!-- 더스트백 3D 실사 -->
+    <div style="text-align:center;">
+      <div style="background:linear-gradient(180deg, #f5f5f3 0%, #e0e0dc 70%, #c8c8c4 100%); border-radius:14px; padding:36px 24px 24px; box-shadow:inset 0 -40px 60px rgba(0,0,0,0.08);">
+        <svg viewBox="0 0 400 480" width="100%" style="max-width:380px;">
+          <defs>
+            <!-- 더스트백 면 그라디언트 (크림 화이트) -->
+            <linearGradient id="pouchMain" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#FBFAF6"/>
+              <stop offset="40%" stop-color="#F0EFE8"/>
+              <stop offset="80%" stop-color="#DDDCD3"/>
+              <stop offset="100%" stop-color="#C5C4BB"/>
+            </linearGradient>
+            <radialGradient id="pouchHighlight" cx="30%" cy="30%" r="50%">
+              <stop offset="0%" stop-color="#ffffff" stop-opacity="0.55"/>
+              <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+            </radialGradient>
+            <linearGradient id="ropeGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+              <stop offset="0%" stop-color="#0ABAB5"/>
+              <stop offset="100%" stop-color="#007E7A"/>
+            </linearGradient>
+            <filter id="fabricNoise"><feTurbulence baseFrequency="0.9" numOctaves="2" seed="3"/><feColorMatrix values="0 0 0 0 0.95  0 0 0 0 0.94  0 0 0 0 0.90  0 0 0 0.08 0"/></filter>
+            <filter id="softShadow2"><feGaussianBlur stdDeviation="5"/></filter>
+          </defs>
+
+          <!-- 바닥 그림자 -->
+          <ellipse cx="200" cy="455" rx="140" ry="10" fill="rgba(0,0,0,0.22)" filter="url(#softShadow2)"/>
+
+          <!-- 더스트백 본체 (드레이프 곡선) -->
+          <path d="M85 95 Q70 105 65 200 Q60 320 80 420 Q90 442 200 448 Q310 442 320 420 Q340 320 335 200 Q330 105 315 95 Q310 90 200 90 Q90 90 85 95 Z"
+                fill="url(#pouchMain)" stroke="#B8B7AE" stroke-width="0.6"/>
+
+          <!-- 천 노이즈 텍스처 -->
+          <path d="M85 95 Q70 105 65 200 Q60 320 80 420 Q90 442 200 448 Q310 442 320 420 Q340 320 335 200 Q330 105 315 95 Q310 90 200 90 Q90 90 85 95 Z"
+                fill="url(#fabricNoise)" opacity="0.6"/>
+
+          <!-- 좌상단 하이라이트 -->
+          <ellipse cx="135" cy="170" rx="65" ry="90" fill="url(#pouchHighlight)" opacity="0.85"/>
+
+          <!-- 세로 천 주름 -->
+          <path d="M120 110 Q116 250 128 430" fill="none" stroke="#B5B4AB" stroke-width="0.9" opacity="0.55"/>
+          <path d="M170 100 Q166 240 175 445" fill="none" stroke="#B5B4AB" stroke-width="0.7" opacity="0.4"/>
+          <path d="M225 100 Q230 240 222 445" fill="none" stroke="#B5B4AB" stroke-width="0.7" opacity="0.4"/>
+          <path d="M275 110 Q282 250 270 430" fill="none" stroke="#B5B4AB" stroke-width="0.9" opacity="0.55"/>
+
+          <!-- 드로스트링 위 주름 (몰림) -->
+          <path d="M85 100 Q105 95 130 102" fill="none" stroke="#A8A79E" stroke-width="0.8" opacity="0.6"/>
+          <path d="M270 102 Q295 95 315 100" fill="none" stroke="#A8A79E" stroke-width="0.8" opacity="0.6"/>
+          <path d="M120 110 Q140 95 160 105" fill="none" stroke="#A8A79E" stroke-width="0.7" opacity="0.5"/>
+          <path d="M240 105 Q260 95 280 110" fill="none" stroke="#A8A79E" stroke-width="0.7" opacity="0.5"/>
+
+          <!-- 채널 (드로스트링 통로) -->
+          <path d="M70 100 Q200 92 330 100" fill="none" stroke="#9E9D94" stroke-width="0.5" opacity="0.5"/>
+          <path d="M70 110 Q200 102 330 110" fill="none" stroke="#9E9D94" stroke-width="0.5" opacity="0.5"/>
+
+          <!-- 드로스트링 끈 (Tiffany Blue) -->
+          <path d="M88 102 Q140 60 200 55 Q260 60 312 102" fill="none" stroke="url(#ropeGrad)" stroke-width="3.5" stroke-linecap="round"/>
+          <path d="M88 102 Q140 62 200 57 Q260 62 312 102" fill="none" stroke="#5BC8C3" stroke-width="1.2" stroke-linecap="round" opacity="0.7"/>
+
+          <!-- 끈 끝 매듭 -->
+          <circle cx="88" cy="102" r="5" fill="#0ABAB5" stroke="#007E7A" stroke-width="0.5"/>
+          <circle cx="312" cy="102" r="5" fill="#0ABAB5" stroke="#007E7A" stroke-width="0.5"/>
+          <ellipse cx="86" cy="100" rx="1.5" ry="1.5" fill="#7DDDD6" opacity="0.7"/>
+          <ellipse cx="310" cy="100" rx="1.5" ry="1.5" fill="#7DDDD6" opacity="0.7"/>
+
+          <!-- 자수 로고 (Tiffany Blue) -->
+          <text x="200" y="270" font-size="22" fill="#0ABAB5" font-family="'Helvetica Neue','Avenir Next','Apple SD Gothic Neo',sans-serif" font-weight="200" letter-spacing="5" text-anchor="middle">JEWELICE</text>
+          <line x1="125" y1="280" x2="275" y2="280" stroke="#0ABAB5" stroke-width="0.5" opacity="0.6"/>
+          <text x="200" y="296" font-size="7" fill="#0ABAB5" font-family="sans-serif" letter-spacing="3" text-anchor="middle" opacity="0.7">PREMIUM ICE</text>
+
+          <!-- 가장자리 스티칭 -->
+          <path d="M85 95 Q70 105 65 200 Q60 320 80 420" fill="none" stroke="#9E9D94" stroke-width="0.4" stroke-dasharray="2,2.5" opacity="0.55"/>
+          <path d="M315 95 Q330 105 335 200 Q340 320 320 420" fill="none" stroke="#9E9D94" stroke-width="0.4" stroke-dasharray="2,2.5" opacity="0.55"/>
+
+          <!-- 바닥 음영 -->
+          <ellipse cx="200" cy="448" rx="115" ry="6" fill="#A09F96" opacity="0.4"/>
+
+          <!-- 치수 라벨 -->
+          <text x="200" y="478" font-size="11" fill="#666" text-anchor="middle" font-family="sans-serif" letter-spacing="2">W250 × H320 mm</text>
+        </svg>
+        <div style="margin-top:12px; font-size:11px; color:#666; letter-spacing:2px; text-transform:uppercase;">DUST BAG · CREAM COTTON</div>
+      </div>
+      <div style="margin-top:14px; padding:12px; background:rgba(200,180,150,0.08); border-radius:8px; border:1px solid rgba(200,180,150,0.25);">
+        <div style="font-size:11px; color:#c8b890; font-weight:700; letter-spacing:1px;">DUST BAG · W250 × H320mm</div>
+        <div style="font-size:10px; color:var(--muted); margin-top:4px; line-height:1.7;">크림 코튼 파우치 · Tiffany Blue 자수 로고 · Tiffany Blue 드로스트링 · 340 쇼핑백 비율 최적화</div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- 사이즈 검증 표 -->
+  <div style="max-width:1100px; margin:32px auto 0; padding:18px 22px; background:var(--surface); border:1px solid var(--tiffany-border); border-radius:12px;">
+    <div style="font-size:11px; color:var(--tiffany-light); letter-spacing:2px; text-transform:uppercase; margin-bottom:12px;">더스트백 W250 × H320 사이즈 검증</div>
+    <table style="width:100%; border-collapse:collapse; font-size:11px;">
+      <thead>
+        <tr style="border-bottom:1px solid var(--border);">
+          <th style="padding:8px; text-align:left; color:var(--muted); font-weight:500; letter-spacing:1px;">검증 기준</th>
+          <th style="padding:8px; text-align:left; color:var(--muted); font-weight:500;">계산</th>
+          <th style="padding:8px; text-align:left; color:var(--muted); font-weight:500;">결과</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr style="border-bottom:1px solid rgba(255,255,255,0.04);">
+          <td style="padding:8px; color:var(--text);">쇼핑백 W340 대비 너비 비율</td>
+          <td style="padding:8px; color:var(--muted);">250 / 340 = 73.5%</td>
+          <td style="padding:8px;"><span style="color:#80d4a0; font-weight:700;">✓ 프리미엄 비율 (70~80%)</span></td>
+        </tr>
+        <tr style="border-bottom:1px solid rgba(255,255,255,0.04);">
+          <td style="padding:8px; color:var(--text);">쇼핑백 H370 대비 높이 비율</td>
+          <td style="padding:8px; color:var(--muted);">320 / 370 = 86.5%</td>
+          <td style="padding:8px;"><span style="color:#80d4a0; font-weight:700;">✓ 프리미엄 비율 (80~90%)</span></td>
+        </tr>
+        <tr style="border-bottom:1px solid rgba(255,255,255,0.04);">
+          <td style="padding:8px; color:var(--text);">최대 제품 W (듀오몰드 181mm)</td>
+          <td style="padding:8px; color:var(--muted);">250 - 181 = 69mm 여유</td>
+          <td style="padding:8px;"><span style="color:#80d4a0; font-weight:700;">✓ 충분</span></td>
+        </tr>
+        <tr style="border-bottom:1px solid rgba(255,255,255,0.04);">
+          <td style="padding:8px; color:var(--text);">최대 제품 H (아블러 248mm + 드로스트링 25mm)</td>
+          <td style="padding:8px; color:var(--muted);">320 - 273 = 47mm 여유</td>
+          <td style="padding:8px;"><span style="color:#80d4a0; font-weight:700;">✓ 아블러까지 수납</span></td>
+        </tr>
+        <tr style="border-bottom:1px solid rgba(255,255,255,0.04);">
+          <td style="padding:8px; color:var(--text);">쇼핑백 좌우 여유 (340 - 250)</td>
+          <td style="padding:8px; color:var(--muted);">90mm = 좌우 45mm씩</td>
+          <td style="padding:8px;"><span style="color:#80d4a0; font-weight:700;">✓ 자연스러운 마진</span></td>
+        </tr>
+        <tr>
+          <td style="padding:8px; color:var(--text);">쇼핑백 상하 여유 (370 - 320)</td>
+          <td style="padding:8px; color:var(--muted);">50mm</td>
+          <td style="padding:8px;"><span style="color:#80d4a0; font-weight:700;">✓ 리본·카드 공간 확보</span></td>
+        </tr>
+      </tbody>
+    </table>
   </div>
 </div>
 
@@ -320,8 +543,8 @@ body { background:var(--bg); color:var(--text); font-family:'Apple SD Gothic Neo
         <text x="28" y="52" text-anchor="middle" font-size="5" fill="rgba(200,180,150,0.45)" font-family="sans-serif" font-weight="700">JEWELICE</text>
         <text x="28" y="62" text-anchor="middle" font-size="4.5" fill="rgba(200,180,150,0.3)" font-family="sans-serif">ALL PRODUCTS</text>
       </svg>
-      <div class="prod-dims" style="color:#c8b890">W190 × H260mm</div>
-      <div class="prod-note"><span style="color:#c8b890">전 제품 공용 ✓</span><br>340 쇼핑백에 최적<br>드로스트링 파우치</div>
+      <div class="prod-dims" style="color:#c8b890">W250 × H320mm</div>
+      <div class="prod-note"><span style="color:#c8b890">전 제품 공용 ✓</span><br>340 쇼핑백 73% 비율<br>드로스트링 파우치</div>
     </div>
 
   </div>
@@ -347,11 +570,11 @@ body { background:var(--bg); color:var(--text); font-family:'Apple SD Gothic Neo
         <line x1="5" y1="32" x2="5" y2="164" stroke="rgba(200,180,150,0.2)" stroke-width="0.8"/>
         <line x1="2" y1="32" x2="8" y2="32" stroke="rgba(200,180,150,0.2)" stroke-width="0.8"/>
         <line x1="2" y1="164" x2="8" y2="164" stroke="rgba(200,180,150,0.2)" stroke-width="0.8"/>
-        <text x="3" y="100" text-anchor="middle" font-size="6" fill="rgba(200,180,150,0.35)" font-family="sans-serif" transform="rotate(-90,3,100)">H260</text>
+        <text x="3" y="100" text-anchor="middle" font-size="6" fill="rgba(200,180,150,0.35)" font-family="sans-serif" transform="rotate(-90,3,100)">H320</text>
         <line x1="16" y1="168" x2="84" y2="168" stroke="rgba(200,180,150,0.2)" stroke-width="0.8"/>
         <line x1="16" y1="165" x2="16" y2="171" stroke="rgba(200,180,150,0.2)" stroke-width="0.8"/>
         <line x1="84" y1="165" x2="84" y2="171" stroke="rgba(200,180,150,0.2)" stroke-width="0.8"/>
-        <text x="50" y="166" text-anchor="middle" font-size="6" fill="rgba(200,180,150,0.35)" font-family="sans-serif" dy="10">W190</text>
+        <text x="50" y="166" text-anchor="middle" font-size="6" fill="rgba(200,180,150,0.35)" font-family="sans-serif" dy="10">W250</text>
       </svg>
       <div class="dustbag-visual-label">드로스트링 파우치<br>면 or 부직포</div>
     </div>
@@ -359,24 +582,24 @@ body { background:var(--bg); color:var(--text); font-family:'Apple SD Gothic Neo
     <!-- 스펙 -->
     <div class="dustbag-info-main">
       <div class="tag">UNIVERSAL DUSTBAG · 공용 1종</div>
-      <div class="dims-big"><strong>W190</strong> × <strong>H260</strong>mm</div>
+      <div class="dims-big"><strong>W250</strong> × <strong>H320</strong>mm</div>
       <div class="sub">드로스트링 파우치 · 단위 mm · 340 쇼핑백 내부 최적화</div>
       <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:14px;">
         <div style="background:rgba(200,180,150,0.06);border:1px solid rgba(200,180,150,0.18);border-radius:9px;padding:11px 13px;">
           <div style="font-size:9px;color:var(--muted);margin-bottom:4px;">유효 수납 폭</div>
-          <div style="font-size:14px;font-weight:700;color:#c8b890;">190mm</div>
-          <div style="font-size:9px;color:var(--muted);">최대 제품 폭 듀오메이커 170mm + 여유 20mm<br>듀오몰드 W181 → 9mm 여유</div>
+          <div style="font-size:14px;font-weight:700;color:#c8b890;">250mm</div>
+          <div style="font-size:9px;color:var(--muted);">쇼핑백 W340의 73.5%<br>듀오몰드 W181 → 69mm 여유</div>
         </div>
         <div style="background:rgba(200,180,150,0.06);border:1px solid rgba(200,180,150,0.18);border-radius:9px;padding:11px 13px;">
           <div style="font-size:9px;color:var(--muted);margin-bottom:4px;">유효 수납 높이</div>
-          <div style="font-size:14px;font-weight:700;color:#c8b890;">~235mm</div>
-          <div style="font-size:9px;color:var(--muted);">H260 - 드로스트링 25mm<br>듀오메이커 H180·글라스 H190·보관통 H178 모두 OK</div>
+          <div style="font-size:14px;font-weight:700;color:#c8b890;">~295mm</div>
+          <div style="font-size:9px;color:var(--muted);">H320 - 드로스트링 25mm<br>아블러 H248까지 47mm 여유 ✓</div>
         </div>
       </div>
       <div style="background:rgba(200,180,150,0.05);border:1px solid rgba(200,180,150,0.15);border-radius:9px;padding:12px 14px;">
         <div style="font-size:10px;color:#c8b890;margin-bottom:8px;font-weight:700;">세종기프트 견적 요청 · 더스트백</div>
         <div style="font-size:10px;color:var(--muted);line-height:2;">
-          · <strong style="color:#fff">W190 × H260mm</strong> · 드로스트링 파우치 (공용 1종)<br>
+          · <strong style="color:#fff">W250 × H320mm</strong> · 드로스트링 파우치 (공용 1종)<br>
           · 수량: 1,000개 / 2,000개 / 3,000개 단가 비교<br>
           · 소재: <strong style="color:#c8b890">면 파우치</strong> vs <strong style="color:#c8b890">부직포</strong> 소재별 단가<br>
           · 인쇄: 로고 자수 or 실크스크린 <span style="color:#a8dce8">(화이트 로고 · Tiffany Blue 옵션 권장)</span>
@@ -386,7 +609,7 @@ body { background:var(--bg); color:var(--text); font-family:'Apple SD Gothic Neo
 
     <!-- 제품별 커버리지 -->
     <div class="dustbag-coverage">
-      <h5>전 제품 수납 커버리지 (W190 × H260)</h5>
+      <h5>전 제품 수납 커버리지 (W250 × H320)</h5>
       <table class="cov-table">
         <thead>
           <tr>
@@ -402,51 +625,51 @@ body { background:var(--bg); color:var(--text); font-family:'Apple SD Gothic Neo
             <td>듀오메이커 박스</td>
             <td class="cov-dim">170</td>
             <td class="cov-dim">180</td>
-            <td class="cov-margin">W+20 / H+55</td>
+            <td class="cov-margin">W+80 / H+115</td>
             <td class="cov-ok">✓</td>
           </tr>
           <tr>
             <td>아블러 박스</td>
             <td class="cov-dim">115</td>
             <td class="cov-dim">248</td>
-            <td class="cov-margin">W+75 / H-13</td>
-            <td class="cov-no">✗ 본품 박스 직출고</td>
+            <td class="cov-margin">W+135 / H+47</td>
+            <td class="cov-ok">✓</td>
           </tr>
           <tr>
             <td>하이볼 글라스 박스</td>
             <td class="cov-dim">80</td>
             <td class="cov-dim">190</td>
-            <td class="cov-margin">W+110 / H+45</td>
+            <td class="cov-margin">W+170 / H+105</td>
             <td class="cov-ok">✓</td>
           </tr>
           <tr>
             <td>보관통+집게</td>
             <td class="cov-dim">115</td>
             <td class="cov-dim">178</td>
-            <td class="cov-margin">W+75 / H+57</td>
+            <td class="cov-margin">W+135 / H+117</td>
             <td class="cov-ok">✓</td>
           </tr>
           <tr>
             <td>듀오 몰드 (본품)</td>
             <td class="cov-dim">181</td>
             <td class="cov-dim">143</td>
-            <td class="cov-margin">W+9 / H+92</td>
-            <td class="cov-edge">△ 타이트</td>
+            <td class="cov-margin">W+69 / H+152</td>
+            <td class="cov-ok">✓</td>
           </tr>
           <tr>
             <td>아블러 몰드 (본품)</td>
             <td class="cov-dim">Ø110</td>
             <td class="cov-dim">55</td>
-            <td class="cov-margin">W+80 / H+180</td>
+            <td class="cov-margin">W+140 / H+240</td>
             <td class="cov-ok">✓</td>
           </tr>
         </tbody>
       </table>
       <div style="margin-top:12px;padding:10px 12px;background:rgba(128,212,160,0.06);border-radius:8px;border:1px solid rgba(128,212,160,0.18);">
         <div style="font-size:10px;color:#80d4a0;line-height:1.9;">
-          ✓ 듀오·글라스·보관통·몰드 전 제품 수납<br>
-          △ 아블러 본품 박스(H248)는 더스트백 미수납 → 박스 직출고<br>
-          ✓ 340 쇼핑백 안에 더스트백 + 제품 충분히 수납
+          ✓ 아블러 H248 포함 전 제품 완전 수납<br>
+          ✓ 듀오 몰드 W181 → W250으로 69mm 여유 확보<br>
+          ✓ 340 쇼핑백 안에 더스트백 + 리본·카드까지 충분히 수납
         </div>
       </div>
     </div>
@@ -489,13 +712,13 @@ body { background:var(--bg); color:var(--text); font-family:'Apple SD Gothic Neo
           <rect x="96" y="128" width="35" height="84" rx="2" fill="rgba(255,255,255,0.13)" stroke="rgba(255,255,255,0.35)" stroke-width="0.8"/>
           <text x="113" y="172" text-anchor="middle" font-size="5.5" fill="#ffffff" font-family="sans-serif" opacity="0.9">글라스 80</text>
           <rect x="138" y="128" width="30" height="84" rx="2" fill="rgba(255,255,255,0.10)" stroke="rgba(255,255,255,0.3)" stroke-width="0.6" stroke-dasharray="2,2"/>
-          <text x="153" y="170" text-anchor="middle" font-size="4.5" fill="#ffffff" font-family="sans-serif" opacity="0.7" transform="rotate(-90,153,170)">더스트백 W190</text>
+          <text x="153" y="170" text-anchor="middle" font-size="4.5" fill="#ffffff" font-family="sans-serif" opacity="0.7" transform="rotate(-90,153,170)">더스트백 W250</text>
         </svg>
       </div>
       <div class="bag-fit-info">
         <div class="fit-row"><span class="fit-name">듀오메이커 단품(170)</span><span class="fit-ok">✓ 170mm 여유</span></div>
         <div class="fit-row"><span class="fit-name">아블러 단품(115×248)</span><span class="fit-ok">✓ H370 충분</span></div>
-        <div class="fit-row"><span class="fit-name">더스트백(W190)</span><span class="fit-ok">✓ 150mm 여유</span></div>
+        <div class="fit-row"><span class="fit-name">더스트백(W250)</span><span class="fit-ok">✓ 90mm 여유</span></div>
         <div class="fit-row"><span class="fit-name">듀오+글라스(250)</span><span class="fit-ok">✓ 90mm 여유</span></div>
         <div class="fit-row"><span class="fit-name">더블세트(345mm)</span><span class="fit-no">✗ 별도 포장</span></div>
         <div class="fit-row"><span class="fit-name">B2B 풀세트(365mm)</span><span class="fit-no">✗ 별도 포장</span></div>
@@ -527,7 +750,7 @@ body { background:var(--bg); color:var(--text); font-family:'Apple SD Gothic Neo
       <div class="bag-fit-info">
         <div class="fit-row"><span class="fit-name">듀오+글라스+리본</span><span class="fit-ok">✓ 여유 생김</span></div>
         <div class="fit-row"><span class="fit-name">더블세트(345mm)</span><span class="fit-edge">△ 15mm 여유뿐</span></div>
-        <div class="fit-row"><span class="fit-name">더스트백(W190)</span><span class="fit-ok">✓ 170mm 여유</span></div>
+        <div class="fit-row"><span class="fit-name">더스트백(W250)</span><span class="fit-ok">✓ 110mm 여유</span></div>
         <div class="fit-row"><span class="fit-name">높이 아블러 H248</span><span class="fit-no">✗ H370 부족</span></div>
       </div>
       <div class="bag-delta">가로 <strong style="color:var(--ice)">+20mm</strong></div>
@@ -545,7 +768,7 @@ body { background:var(--bg); color:var(--text); font-family:'Apple SD Gothic Neo
           <text x="95" y="84" text-anchor="middle" font-size="9" fill="#7ecfe0" font-family="sans-serif" font-weight="700" letter-spacing="3">JEWELICE</text>
           <line x1="30" y1="92" x2="160" y2="92" stroke="#2a5a70" stroke-width="0.5"/>
           <rect x="4" y="96" width="182" height="12" fill="rgba(200,180,150,0.05)" stroke="rgba(200,180,150,0.2)" stroke-width="0.5" stroke-dasharray="2,2"/>
-          <text x="95" y="105" text-anchor="middle" font-size="6" fill="#c8a870" font-family="sans-serif">더스트백 W190 + 여유 190mm</text>
+          <text x="95" y="105" text-anchor="middle" font-size="6" fill="#c8a870" font-family="sans-serif">더스트백 W250 + 여유 130mm</text>
           <rect x="8" y="114" width="81" height="88" rx="3" fill="#142838" stroke="rgba(126,207,224,0.25)" stroke-width="1"/>
           <text x="48" y="158" text-anchor="middle" font-size="6" fill="#7ecfe0" font-family="sans-serif" font-weight="700">듀오메이커</text>
           <rect x="97" y="114" width="55" height="119" rx="3" fill="#102030" stroke="rgba(126,207,224,0.2)" stroke-width="1"/>
@@ -589,7 +812,7 @@ body { background:var(--bg); color:var(--text); font-family:'Apple SD Gothic Neo
       </div>
       <div class="bag-fit-info">
         <div class="fit-row"><span class="fit-name">더블세트(345mm)</span><span class="fit-ok">✓ 55mm 여유</span></div>
-        <div class="fit-row"><span class="fit-name">더스트백(W190)</span><span class="fit-ok">✓ 210mm 여유</span></div>
+        <div class="fit-row"><span class="fit-name">더스트백(W250)</span><span class="fit-ok">✓ 150mm 여유</span></div>
         <div class="fit-row"><span class="fit-name">B2B 풀구성</span><span class="fit-ok">✓ 최대 여유</span></div>
         <div class="fit-row"><span class="fit-name">이번 기본 통일</span><span class="fit-edge">△ 340으로 결정</span></div>
       </div>
@@ -610,7 +833,7 @@ body { background:var(--bg); color:var(--text); font-family:'Apple SD Gothic Neo
 
 <!-- SECTION 4: 세트 시나리오 -->
 <div class="section">
-  <div class="section-title">04 · 주문 시나리오 — 쇼핑백 340 + 더스트백 W190 기준</div>
+  <div class="section-title">04 · 주문 시나리오 — 쇼핑백 340 + 더스트백 W250 기준</div>
   <div class="scenario-grid">
 
     <div class="scenario-card hot">
@@ -624,7 +847,7 @@ body { background:var(--bg); color:var(--text); font-family:'Apple SD Gothic Neo
       </div>
       <div class="sc-result">
         <div class="need">→ 340 Tiffany 쇼핑백 ★</div>
-        <div class="reason">듀오 170 / 글라스 80 모두 340에 여유<br>더스트백 W190 동봉 충분</div>
+        <div class="reason">듀오 170 / 글라스 80 모두 340에 여유<br>더스트백 W250 동봉 충분</div>
       </div>
     </div>
 
@@ -652,7 +875,7 @@ body { background:var(--bg); color:var(--text); font-family:'Apple SD Gothic Neo
       </div>
       <div class="sc-result">
         <div class="need">→ 340 Tiffany 쇼핑백 OK</div>
-        <div class="reason">글라스 W80 + 더스트백 W190<br>340에 넉넉히 수납 ✓</div>
+        <div class="reason">글라스 W80 + 더스트백 W250<br>340에 넉넉히 수납 ✓</div>
       </div>
     </div>
 
@@ -735,13 +958,13 @@ body { background:var(--bg); color:var(--text); font-family:'Apple SD Gothic Neo
     <!-- 더스트백 확정 -->
     <div class="verdict-box dustbag-box">
       <div class="verdict-label" style="color:#c8b890">CONFIRMED · 더스트백 1종 · 340 쇼핑백 최적</div>
-      <div class="verdict-size"><strong style="color:#c8b890">W190</strong> × <strong style="color:#c8b890">H260</strong></div>
+      <div class="verdict-size"><strong style="color:#c8b890">W250</strong> × <strong style="color:#c8b890">H320</strong></div>
       <div class="verdict-sub">단위 mm · 드로스트링 파우치 · 340 쇼핑백 내부 최적화</div>
       <ul class="verdict-reasons">
         <li style="color:var(--text)">듀오메이커(W170) / 글라스(W80) / 보관통(W115) <strong>전 제품 커버</strong></li>
-        <li style="color:var(--text)">듀오 몰드(W181) → W190으로 9mm 여유 (타이트하지만 수납 가능)</li>
+        <li style="color:var(--text)">듀오 몰드(W181) → W250으로 69mm 여유 (충분)</li>
         <li style="color:var(--text)">아블러(H248)는 본품 박스 직출고 — 더스트백 미적용</li>
-        <li style="color:var(--text)">340 쇼핑백(W340) 안에 더스트백(W190) + 제품 + 리본 충분 수납</li>
+        <li style="color:var(--text)">340 쇼핑백(W340) 안에 더스트백(W250) + 제품 + 리본 충분 수납</li>
         <li style="color:var(--text)">소재: 면 파우치 (부드럽고 프리미엄 감) 권장</li>
         <li style="color:var(--text)">컬러 옵션: 화이트 본바탕 + Tiffany Blue 자수 로고 (쇼핑백과 통일감)</li>
       </ul>
@@ -752,7 +975,7 @@ body { background:var(--bg); color:var(--text); font-family:'Apple SD Gothic Neo
           <thead><tr><th>품목</th><th>사이즈</th><th>인쇄</th><th>수량</th></tr></thead>
           <tbody>
             <tr class="best"><td>쇼핑백 ★ 확정</td><td>340×140×370mm</td><td>Tiffany #0ABAB5 단색 + 화이트 로고</td><td>1K/2K/3K</td></tr>
-            <tr class="best2"><td>더스트백 ★ 확정</td><td>W190×H260mm</td><td>화이트 + Tiffany 자수 또는 실크</td><td>1K/2K/3K</td></tr>
+            <tr class="best2"><td>더스트백 ★ 확정</td><td>W250×H320mm</td><td>화이트 + Tiffany 자수 또는 실크</td><td>1K/2K/3K</td></tr>
           </tbody>
         </table>
         <div style="font-size:10px;color:var(--muted);margin-top:10px;line-height:1.9;">
@@ -767,7 +990,7 @@ body { background:var(--bg); color:var(--text); font-family:'Apple SD Gothic Neo
 </div>
 
 <div style="text-align:center;padding:18px;font-size:10px;color:var(--muted);">
-  v6.0 · 쇼핑백 1종(340×140×370 · Tiffany Blue + White Logo) + 더스트백 1종(W190×H260) · 기존 박스 활용 · 2026.04.28
+  v6.1 · 쇼핑백 1종(340×140×370 · Tiffany Blue + White Logo) + 더스트백 1종(W250×H320) · 기존 박스 활용 · 2026.04.28
 </div>
 </body>
 </html>
